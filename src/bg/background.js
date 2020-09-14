@@ -11,3 +11,14 @@ chrome.extension.onMessage.addListener(
   	chrome.pageAction.show(sender.tab.id);
     sendResponse();
   });
+
+function buttonclick(){
+	$("button").each(function() {
+		if($(this).text() == "Launch Poll") {
+			var button = $(this); 
+			button.click();  
+		}
+	})
+	var pagebutton= document.getElementById("selfclick");
+	pagebutton.click();
+}

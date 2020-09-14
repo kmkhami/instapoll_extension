@@ -1,8 +1,8 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Instapoll Extension",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
+  "description": "This extension will help UT Students to not miss Instapolls",
   "homepage_url": "http://extensionizr.com",
   "icons": {
     "16": "icons/icon16.png",
@@ -11,7 +11,7 @@
   },
   "default_locale": "en",
   "background": {
-    "page": "src/bg/background.html",
+    "scripts": "src/bg/background.html",
     "persistent": true
   },
   "permissions": [
@@ -31,23 +31,5 @@
     "tabs",
     "geolocation",
     "<all_urls>"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
   ]
 }
